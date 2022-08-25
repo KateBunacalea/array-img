@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Document</title>
+</head>
+<body>
+    <img src="11.png" id = "mainImage">
+    <button onclick="changeImage()">next</button>
+    <script type="text/javascript" >
+        var myImage = document.getElementById('mainImage');
+var imageArray = ["11.png", "44.png", "55.png", "3.png"];
+var imageIndex = 1;
+
+function changeImage(){
+    myImage.setAttribute("src", imageArray[imageIndex]);
+    imageIndex++;
+    if (imageIndex > 3) {imageIndex = 0};
+}
+
+    </script>
+    
+</body>
+</html>
